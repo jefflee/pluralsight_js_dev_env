@@ -4,4 +4,4 @@
 //ES6
 import chark from "chalk";
 
-console.log(chark.green("Starting app in dev mode..."));
+console.log(chark.green("Starting app in dev mode...")); // eslint-disable-line no-console
