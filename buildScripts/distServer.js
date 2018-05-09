@@ -2,12 +2,14 @@ var express = require('express');
 var path = require('path');
 import open from 'open';
 import _ from 'underscore';
+import compression from 'compression';
 
 /* eslint-disable no-console */
 
 const port = 3000;
 const app = express();
 
+app.use(compression);
 app.use(express.static('dist'));
 
 app.get('/', function (req, res) {
