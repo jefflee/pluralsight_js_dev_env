@@ -6,14 +6,14 @@ import { getUsers, deleteUser } from './api/userApi';
 /* eslint-disable no-debugger */
 
 const courseValue = numeral(1000).format('$0, 0.00');
-//debugger;
+
 console.log(`I would pay ${courseValue} for this awesome course!`);
 
 
 // Populate table of users via API call.
 getUsers().then(result => {
     let usersBody = "";
-    
+    //debugger;
     result.forEach(user => {
         usersBody += `<tr>
       <td><a href="#" data-id="${user.id}" class="deleteUser">Delete</a></td>
